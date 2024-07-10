@@ -9,7 +9,7 @@
   @apply text-sm;
 }
 .menu_link {
-  @apply text-[12px] md:text-[14px] lg:text-[16px] leading-[17.84px] font-comfortaa font-semibold text-white text-opacity-70 border-b-[1px] py-1 px-2 border-b-gray-800 cursor-pointer hover:text-slate-100 transition-all duration-300 ease-in-out rounded-md;
+  @apply text-[13px] md:text-[14px] lg:text-[16px] leading-[17.84px] font-comfortaa font-semibold text-white border-b-[1px] py-1 px-2 border-b-gray-800 cursor-pointer  transition-all duration-300 ease-in-out rounded-md;
 }
 .custom_transition {
   @apply transition-all duration-300 ease-in-out;
