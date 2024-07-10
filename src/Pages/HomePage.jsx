@@ -1,4 +1,5 @@
 import Contacts from "../Components/Layout/Contacts";
+import DjfyWorks from "../Components/Layout/DjfyWorks";
 import HeroSection from "../Components/Layout/HeroSection";
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <Contacts />
       <HeroSection />
+      <DjfyWorks />
     </>
   );
 };

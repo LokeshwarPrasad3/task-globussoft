@@ -3,7 +3,7 @@ import Navbar from "../UI/Navbar";
 const HeroSection = () => {
   return (
     <>
-      <div className="main_section h-[815px] w-full flex flex-col">
+      <div className="main_section h-[850px] w-full flex flex-col">
         <Navbar />
         <div className="search_section my-10 md:my-15 lg:my-20 flex justify-end items-center relative right-[10vw]">
           <img
@@ -47,14 +47,14 @@ const HeroSection = () => {
           <div className="right_part lg:w-fit relative mr-20 md:mr-10">
             {/* image-1 (overlay) */}
             <img
-              className="absolute top-11 left-20 z-10 w-[180px] sm:w-[250px] h-[180px] sm:h-[250px] md:w-[405px] md:h-[400px] "
+              className="absolute top-11 left-20 z-10 w-[180px] md:w-[250px] h-[180px] md:h-[250px] lg:w-[405px] lg:h-[400px] "
               src="/images/HeroSection/girl-image-1.png"
               alt="img-1"
             />
 
             {/* image-2 */}
             <img
-              className="relative z-20 md:w-[400px] w-[180px] sm:w-[250px] h-[180px] sm:h-[250px] md:h-[400px] rounded-2xl  "
+              className="relative z-20 w-[180px] md:w-[250px] h-[180px] md:h-[250px] lg:w-[400px] lg:h-[400px] rounded-2xl  "
               style={{
                 boxShadow: "0 5px 6px 10px rgba(0,0,0,0.3)",
               }}
