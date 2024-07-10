@@ -75,7 +75,7 @@ const Navbar = () => {
           </div>
           <div className="show_menu_container">
             <div
-              className={`show_menu absolute h-screen top-0 ${showMenu ? "left-[0%]" : "left-[-100%]"} p-4   flex flex-col gap-4 bg-slate-900 w-1/3 custom_transition`}
+              className={`show_menu absolute h-screen top-0 ${showMenu ? "left-[0%]" : "left-[-100%]"} p-4 flex flex-col gap-4 bg-slate-900 w-[15rem] custom_transition`}
             >
               {AllMenuLinksArray.map((menu_link, index) => (
                 <React.Fragment key={index}>
