@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         'comfortaa': ['Comfortaa', 'sans-serif'],
+        'montserrat': ["Montserrat"]
       },
     },
   },
