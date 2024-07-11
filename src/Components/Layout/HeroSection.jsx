@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import Navbar from "../UI/Navbar";
 
 const HeroSection = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = "black";
+  });
+
   return (
     <>
       <div className="main_section h-[850px] w-full flex flex-col">

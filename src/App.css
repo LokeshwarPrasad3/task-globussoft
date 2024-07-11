@@ -1,4 +1,4 @@
-/* css for HeroSection component */
+/*👉 css for HeroSection component */
 .main_section::before {
   content: "";
   position: absolute;
@@ -13,7 +13,7 @@
   z-index: -1;
 }
 
-/* CSS for Ultimate DJ Tool component */
+/*👉CSS for Ultimate DJ Tool component */
 .ultimate_djtool_container::before {
   content: "";
   position: absolute;
@@ -22,9 +22,10 @@
   width: 100%;
   height: 100%;
   background-image: url("../public/images/dj-tool-bg.png");
+  background-color: #07091f;
   background-size: cover;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -53,4 +54,24 @@
 }
 .djtool_heading_container input[type="text"]::placeholder {
   color: #646789;
+}
+
+/*👉 for usage video secton */
+.usagevideo_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/images/dj-tool-bg.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Additional styling for content overlay */
+.usagevideo_container {
+  position: relative;
 }

@@ -4,7 +4,7 @@ const UltimateDJTool = () => {
   return (
     <div className="ultimate_djtool_container max-h-[600px] md:max-h-[630px] overflow-visible font-montserrat pt-10">
       <div className="flex-3 w-full md:mb-20 md:pt-16 mb-16 pt-10">
-        <div className="djtool_heading_container relative w-[95%] mx-3 sm:w-[80%] lg:w-[663px] h-[190px] lg:h-[232px] border-2 border-gray-600 rounded-[20px] p-6">
+        <div className="djtool_heading_container relative w-[95%] mx-3 sm:w-[80%] lg:w-[663px] h-[190px] lg:h-[232px] border-2 border-gray-700 rounded-[20px] p-6">
           <img
             src="./images/The Ultimate DJ Tool.png"
             alt="The Ultimate DJ Tool"
