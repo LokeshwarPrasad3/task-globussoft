@@ -1,5 +1,6 @@
 import Contacts from "../Components/Layout/Contacts";
 import DjfyWorks from "../Components/Layout/DjfyWorks";
+import GallerySection from "../Components/Layout/GallerySection";
 import HeroSection from "../Components/Layout/HeroSection";
 import UltimateDJTool from "../Components/Layout/UltimateDJTool";
 import UsageVideo from "../Components/Layout/UsageVideo";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <UltimateDJTool />
       <WebApps />
       <UsageVideo />
+      <GallerySection />
     </>
   );
 };

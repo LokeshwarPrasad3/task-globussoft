@@ -8,9 +8,9 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="main_section h-[850px] w-full flex flex-col">
+      <div className="main_section min-h-[890px] w-full flex flex-col">
         <Navbar />
-        <div className="search_section my-10 md:my-15 lg:my-20 flex justify-end items-center relative right-[10vw]">
+        <div className="search_section my-5 md:my-15 lg:my-20 flex justify-end items-center relative right-[10vw]">
           <img
             className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] cursor-pointer"
             src="/images/HeroSection/search-icon.png"
