@@ -2,7 +2,7 @@ import Gallery from "../UI/Gallery";
 
 const GallerySection = () => {
   return (
-    <div className="gallerysection_container bg-[#07091f] font-montserrat flex-3 flex-col gap-12 py-20 ">
+    <div className="gallerysection_container bg-[#07091f] font-montserrat flex-3 flex-col gap-12 py-16 ">
       <div className="heading_part_container flex-3 flex-col gap-4">
         <img src="/images/Gallery/logo.png" className="h-[55px] w-[55px]" />
         <h2 className="font-normal text-[#DB1E2D] text-[32px] leading-[39.01px]">

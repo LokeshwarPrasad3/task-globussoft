@@ -1,3 +1,4 @@
+import ClientTestimonials from "../Components/Layout/ClientTestimonials";
 import Contacts from "../Components/Layout/Contacts";
 import DjfyWorks from "../Components/Layout/DjfyWorks";
 import GallerySection from "../Components/Layout/GallerySection";
@@ -18,6 +19,7 @@ const HomePage = () => {
       <WebApps />
       <UsageVideo />
       <GallerySection />
+      <ClientTestimonials />
     </>
   );
 };
