@@ -15,7 +15,7 @@ const UltimateDJTool = () => {
               <input
                 type="text"
                 placeholder="Search Venues & DJs"
-                className="h-[44px] lg:h-[56px] w-[20rem]  focus:outline-none md:w-[300px] lg:w-[450px] rounded-md border-2 border-white/50 bg-[#0E1135] text-white placeholder-white px-4 pl-12 "
+                className="h-[44px] lg:h-[56px] w-[16rem] sm:w-[20rem] focus:outline-none md:w-[300px] lg:w-[450px] rounded-md border-2 border-white/50 bg-[#0E1135] text-white placeholder-white px-4 pl-12 "
               />
               <i className="ri-search-line opacity-30 absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-2xl"></i>
             </div>

@@ -8,7 +8,7 @@ const Gallery = () => {
           key={index}
           src={image}
           alt={`Gallery Image ${index + 1}`}
-          className="w-[11rem] h-[11rem] md:w-[200px] md:h-[200px] object-cover"
+          className="w-[10rem] h-[10rem] md:w-[200px] md:h-[200px] object-cover"
         />
       ))}
     </div>
