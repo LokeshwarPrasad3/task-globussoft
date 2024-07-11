@@ -1,7 +1,7 @@
 const TestimonialSlider = ({ index, name, designation, quote }) => {
   return (
     <div
-      className={`slider_${index}_container object-cover flex-3 flex-col gap-5 w-[20rem] h-[18rem] md:w-[22rem] md:h-[15.8rem] lg:w-[332px] lg:h-[280px] bg-cover bg-center p-8 rounded-2xl`}
+      className={`slider_${index}_container object-cover flex-3 flex-col gap-5 w-[20rem] h-[18rem] md:w-[22rem] md:h-[15.8rem] lg:w-[332px] lg:h-[280px] bg-cover bg-center p-8 `}
     >
       <div className="comma_container flex-3">
         <img
