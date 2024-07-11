@@ -111,15 +111,19 @@ const Slider = () => {
             className="flex-none p-4 box-border"
             style={{ width: slideWidth, height: "290px", maxWidth: "330px" }}
           >
-            <div className="w-full h-full rounded-t-none rounded-b-lg bg-gradient-to-b from-black to-black p-4">
+            <div className="w-full h-full pb-3 bg-gradient-to-b from-black to-black">
               <img
                 src={event.image}
                 alt={event.dj}
-                className=" w-[18rem] sm:w-full h-2/3 object-cover rounded-t-none rounded-b-lg"
+                className=" w-[18rem] rounded-t-2xl sm:w-full h-full object-cover rounded-b-lg"
               />
-              <div className="text-yellow-500 mt-2">{event.date}</div>
-              <div className="text-red-500 text-lg font-bold">{event.dj}</div>
-              <div className="text-white">{event.location}</div>
+              <div className="details relative top-[-4rem] bg-gradient-to-b from-slate-900 to-gray-950 rounded-b-xl pb-8 pt-1">
+                <div className="text-yellow-500 mt-2 pl-3">{event.date}</div>
+                <div className="text-red-500 text-lg font-bold pl-3">
+                  {event.dj}
+                </div>
+                <div className="text-white pl-3">{event.location}</div>
+              </div>
             </div>
           </div>
         ))}
@@ -128,13 +132,13 @@ const Slider = () => {
         onClick={prevSlide}
         className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
       >
-        <i className="ri-arrow-left-s-line text-white text-2xl"></i>
+        <i className="ri-arrow-left-line text-white text-2xl"></i>
       </button>
       <button
         onClick={nextSlide}
         className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
       >
-        <i className="ri-arrow-right-s-line text-white text-2xl"></i>
+        <i className="ri-arrow-right-line text-white text-2xl"></i>
       </button>
     </div>
   );

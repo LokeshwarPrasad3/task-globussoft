@@ -3,6 +3,7 @@ import DjfyWorks from "../Components/Layout/DjfyWorks";
 import HeroSection from "../Components/Layout/HeroSection";
 import UltimateDJTool from "../Components/Layout/UltimateDJTool";
 import UseCases from "../Components/Layout/UseCases";
+import WebApps from "../Components/Layout/WebApps";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <DjfyWorks />
       <UseCases />
       <UltimateDJTool />
+      <WebApps />
     </>
   );
 };

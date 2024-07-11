@@ -2,7 +2,7 @@ import Slider from "../UI/Slider";
 
 const UltimateDJTool = () => {
   return (
-    <div className="ultimate_djtool_container pt-10">
+    <div className="ultimate_djtool_container max-h-[600px] md:max-h-[630px] overflow-visible font-montserrat pt-10">
       <div className="flex-3 w-full md:mb-20 md:pt-16 mb-16 pt-10">
         <div className="djtool_heading_container relative w-[95%] mx-3 sm:w-[80%] lg:w-[663px] h-[190px] lg:h-[232px] border-2 border-gray-600 rounded-[20px] p-6">
           <img
@@ -25,6 +25,7 @@ const UltimateDJTool = () => {
       <div className="mx-auto md:w-[41rem] lg:w-[60rem] ">
         <Slider />
       </div>
+      <div className="h-100px -z-40"></div>
     </div>
   );
 };

@@ -14,3 +14,6 @@
 .custom_transition {
   @apply transition-all duration-300 ease-in-out;
 }
+.custom_button {
+  @apply rounded-md bg-gradient-to-b from-[#F6B910] to-[#D71B2C];
+}
