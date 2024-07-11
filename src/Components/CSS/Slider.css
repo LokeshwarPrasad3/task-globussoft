@@ -1,0 +1,8 @@
+/* Add any custom styles you need here */
+
+/* Ensures the slide container takes full width on smaller screens */
+@media (max-width: 768px) {
+  .flex-none {
+    width: 100% !important;
+  }
+}
