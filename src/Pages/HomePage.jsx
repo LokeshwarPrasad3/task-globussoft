@@ -9,6 +9,7 @@ import UsageVideo from "../Components/Layout/UsageVideo";
 import UseCases from "../Components/Layout/UseCases";
 import WebApps from "../Components/Layout/WebApps";
 import SiteMapSection from "../Components/Layout/SiteMapSection";
+import FooterSection from "../Components/Layout/FooterSection";
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
       <ClientTestimonials />
       <FAQSection />
       <SiteMapSection />
+      <FooterSection />
     </>
   );
 };
