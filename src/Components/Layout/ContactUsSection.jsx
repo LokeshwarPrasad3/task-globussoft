@@ -28,7 +28,7 @@ const ContactUsSection = () => {
           <div className="header_part flex items-center gap-3">
             <img
               className="h-14 w-14"
-              src="/images/HeroSection/Djfi-icon.png"
+              src="/images/AboutUsSection/Djfi-icon.png"
               alt=""
             />
             <h1 className="text-2xl font-bold">DJFY</h1>

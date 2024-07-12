@@ -40,12 +40,12 @@ const Navbar = () => {
         <div className="vector_box relative top-[0.2rem] md:top-[1.18rem] flex-3">
           <img
             className="h-[100px] w-[175px] md:h-[132.28px] md:w-[232.5px]"
-            src="/images/HeroSection/Vector-1.png"
+            src="/images/AboutUsSection/Vector-1.png"
             alt="vector"
           />
           <img
             className="absolute w-[70px] h-[70px] md:w-[102px] md:h-[102px]"
-            src="/images/HeroSection/Djfi-icon.png"
+            src="/images/AboutUsSection/Djfi-icon.png"
             alt="icon"
           />
         </div>

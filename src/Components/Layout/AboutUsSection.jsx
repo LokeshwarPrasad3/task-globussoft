@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../UI/Navbar";
 
-const HeroSection = () => {
+const AboutUsSection = () => {
   useEffect(() => {
     document.body.style.backgroundColor = "black";
   });
@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="search_section my-5 md:my-15 lg:my-20 flex justify-end items-center relative right-[10vw]">
           <img
             className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] cursor-pointer"
-            src="/images/HeroSection/search-icon.png"
+            src="/images/AboutUsSection/search-icon.png"
             alt=""
           />
         </div>
@@ -31,7 +31,7 @@ const HeroSection = () => {
             <div className="wave-icon">
               <img
                 className="w-[50px]"
-                src="/images/HeroSection/music-wave.png"
+                src="/images/AboutUsSection/music-wave.png"
                 alt=""
               />
             </div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
             {/* image-1 (overlay) */}
             <img
               className="absolute top-11 left-20 z-10 w-[180px] md:w-[250px] h-[180px] md:h-[250px] lg:w-[405px] lg:h-[400px] "
-              src="/images/HeroSection/girl-image-1.png"
+              src="/images/AboutUsSection/girl-image-1.png"
               alt="img-1"
             />
 
@@ -66,7 +66,7 @@ const HeroSection = () => {
               style={{
                 boxShadow: "0 5px 6px 10px rgba(0,0,0,0.3)",
               }}
-              src="/images/HeroSection/girl-image-2.png"
+              src="/images/AboutUsSection/girl-image-2.png"
               alt="img-2"
             />
           </div>
@@ -76,4 +76,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default AboutUsSection;
