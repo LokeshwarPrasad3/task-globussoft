@@ -4,10 +4,14 @@ import "../CSS/Slider.css"; // For custom styles
 import { events } from "../../data/SliderData";
 
 const Slider = () => {
+  // State to know current index of slides
   const [currentIndex, setCurrentIndex] = useState(0);
+  // need to know mobile or not
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  // timeout reference for slideshow
   const timeoutRef = useRef(null);
 
+  // this effect update isMobile state when resize devices
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -18,8 +22,11 @@ const Slider = () => {
     };
   }, []);
 
+  // Effect that manage slideshow transitions and autoplay
   useEffect(() => {
-    resetTimeout();
+    resetTimeout(); // Clear any existing timeout
+
+    // Autoplay logic (if not on mobile)
     if (!isMobile) {
       timeoutRef.current = setTimeout(() => {
         setCurrentIndex((prevIndex) => {
@@ -27,19 +34,23 @@ const Slider = () => {
           const maxIndex = events.length - slidesToShow;
           return prevIndex === maxIndex ? 0 : prevIndex + 1;
         });
-      }, 3000);
+      }, 3000); // 3-second interval for autoplay
     }
+
+    // Cleanup function to clear timeout on component unmount or state change
     return () => {
       resetTimeout();
     };
-  }, [currentIndex, isMobile]);
+  }, [currentIndex, isMobile]); // Dependencies for the effect
 
+  // Function to clear the timeout
   const resetTimeout = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
   };
 
+  // left icon clicked then move
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => {
       const slidesToShow = isMobile ? 1 : 3;
@@ -48,6 +59,7 @@ const Slider = () => {
     });
   };
 
+  // right icon clicked then move
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {
       const slidesToShow = isMobile ? 1 : 3;
@@ -56,6 +68,7 @@ const Slider = () => {
     });
   };
 
+  // Variables to determine number of slides to show and slide width
   const slidesToShow = isMobile ? 1 : 3;
   const slideWidth = isMobile ? "100%" : "33.33%";
 

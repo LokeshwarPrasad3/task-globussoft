@@ -2,8 +2,10 @@ import { useState } from "react";
 import { faqs } from "../../data/FAQData";
 
 const FAQComponent = () => {
+  // state for open/close answers
   const [openIndex, setOpenIndex] = useState(null);
 
+  // toggle when clicked to question
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

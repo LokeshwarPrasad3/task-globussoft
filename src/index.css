@@ -10,6 +10,7 @@ body {
   background-color: #07091f;
 }
 
+/* creating reusable class component using directives @apply */
 .flex-3 {
   @apply flex justify-center items-center;
 }
