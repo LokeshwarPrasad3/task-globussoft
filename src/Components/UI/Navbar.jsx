@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // creating array for multiple menu values
@@ -12,6 +11,7 @@ const Navbar = () => {
     { name: "FAQ", route: "#faq" },
     { name: "Contact us", route: "#contact-us" },
   ];
+
   // for toggle menu open / close
   const [showMenu, setShowMenu] = useState(false);
 
@@ -27,6 +27,7 @@ const Navbar = () => {
             "linear-gradient(to right, black, #EE6127, #F9BC11, #EE6127, black) 1",
         }}
       >
+        {/* links for medium to bigger size devices */}
         <a className="hidden md:flex" href="#about-us">
           About us
         </a>
@@ -58,7 +59,7 @@ const Navbar = () => {
           Contact us
         </a>
 
-        {/* responsive navbar design */}
+        {/* responsive smaller navbar design */}
         <div className={`md:hidden flex`}>
           <div className="icon absolute top-28 sm:top-14 right-5">
             {showMenu ? (
