@@ -19,7 +19,7 @@ const FAQComponent = () => {
             className="w-full text-left px-0 py-4 border-t-[1px] border-[#E2E2E4] text-white flex justify-between items-center"
             onClick={() => toggleFAQ(index)}
           >
-            <span className="text-[14px] md:text-[18px] text-white font-medium leading-[21.94px]">
+            <span className="text-[14px] md:text-[18px] opacity-80 text-white font-medium leading-[21.94px]">
               {faq.question}
             </span>
             <span>
@@ -31,7 +31,7 @@ const FAQComponent = () => {
             </span>
           </button>
           {openIndex === index && (
-            <div className="px-0 pt-0 custom_transition pb-4 text-[14px] md:text-[18px] text-white font-normal leading-[21.94px]">
+            <div className="px-0 pt-0 custom_transition pb-4 text-[14px] md:text-[18px] text-white opacity-80 font-normal leading-[21.94px]">
               {faq.answer}
             </div>
           )}

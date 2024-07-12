@@ -30,12 +30,8 @@ const WebApps = () => {
         <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
       </div>
       <div className="webapps_button_container text-white flex-3 gap-8 sm:gap-10">
-        <button className="custom_button px-3 sm:px-5 py-3 text-xs sm:text-sm font-bold rounded-[5px]">
-          Sign Up as User
-        </button>
-        <button className="custom_button px-3 sm:px-5 py-3 text-xs sm:text-sm font-bold rounded-[5px]">
-          Signup as DJ
-        </button>
+        <button className="custom_button">Sign Up as User</button>
+        <button className="custom_button">Signup as DJ</button>
       </div>
     </div>
   );

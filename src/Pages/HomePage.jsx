@@ -8,6 +8,7 @@ import UltimateDJTool from "../Components/Layout/UltimateDJTool";
 import UsageVideo from "../Components/Layout/UsageVideo";
 import UseCases from "../Components/Layout/UseCases";
 import WebApps from "../Components/Layout/WebApps";
+import SiteMapSection from "../Components/Layout/SiteMapSection";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
       <GallerySection />
       <ClientTestimonials />
       <FAQSection />
+      <SiteMapSection />
     </>
   );
 };

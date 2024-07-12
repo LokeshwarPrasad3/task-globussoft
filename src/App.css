@@ -135,3 +135,31 @@
 .slider_3_container {
   position: relative;
 }
+
+/*👉 for footer gradient colors */
+.bg_custom_gradient {
+  background: linear-gradient(to bottom, #15213f, #121b35);
+}
+
+/* styles for footer container */
+@media (max-width: 1144px) {
+  .sitemap_container {
+    padding-right: 7rem;
+  }
+}
+@media (max-width: 1000px) {
+  .sitemap_container {
+    padding-right: 0rem;
+  }
+}
+/* links container of footer */
+@media (max-width: 1022px) {
+  .links_container {
+    padding-left: 9rem;
+  }
+}
+@media (max-width: 767px) {
+  .links_container {
+    padding-left: 0rem;
+  }
+}
