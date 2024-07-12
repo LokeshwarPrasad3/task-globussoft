@@ -1,5 +1,4 @@
-import TestimonialSlider from "../UI/TestimonialSlider";
-import { testimonialDataArray } from "../../data/TestimonialData";
+import TestimonialSwiperComponent from "../UI/TestimonialSwiperComponent";
 
 const ClientTestimonials = () => {
   return (
@@ -23,21 +22,8 @@ const ClientTestimonials = () => {
         </p>
       </div>
       <div className="gallery_image_container">
-        {/* upper images section */}
-        <div className="animation_slider_container flex-3 flex-wrap gap-6">
-          {testimonialDataArray.map((element, index) => (
-            <TestimonialSlider key={index} {...element} />
-          ))}
-        </div>
-
-        {/* lower section */}
-        <div className="rectangle_animate flex-3 gap-3 pt-12">
-          <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-          <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-          <div className="h-2 w-2 border-1 border-white bg-yellow-100 hover:scale-150 cursor-pointer rounded-full"></div>
-          <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-          <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-        </div>
+        {/* Swiper library component */}
+        <TestimonialSwiperComponent />
       </div>
     </div>
   );

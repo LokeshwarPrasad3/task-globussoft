@@ -83,7 +83,8 @@
 /* 👉Testimonial Slider styles */
 
 /* slider -1  */
-.slider_1_container::before {
+.slider_1_container::before,
+.slider_4_container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -96,12 +97,14 @@
   opacity: 0.3;
 }
 
-.slider_1_container {
+.slider_1_container,
+.slider_4_container {
   position: relative;
 }
 
 /* slider -1  */
-.slider_2_container::before {
+.slider_2_container::before,
+.slider_5_container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -114,7 +117,8 @@
   opacity: 0.3;
 }
 
-.slider_2_container {
+.slider_2_container,
+.slider_5_container {
   position: relative;
 }
 
