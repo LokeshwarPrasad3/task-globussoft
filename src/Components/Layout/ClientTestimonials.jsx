@@ -12,7 +12,7 @@ const ClientTestimonials = () => {
           src="/images/Testimonials/logo.png"
           className="h-[55px] w-[55px]"
         />
-        <h2 className="font-normal text-[#ffff] text-[32px] leading-[39.01px]">
+        <h2 className="font-normal text-[#ffff] text-[32px] flex-3 flex-wrap leading-[39.01px]">
           CLIENT <span className="text-[#DB1E2D]">TESTIMONIALS</span>
         </h2>
         <img src="/images/Testimonials/music-wave.png" alt="wave" />
