@@ -1,7 +1,7 @@
 import { DJFYWorksBoxArray } from "../../data/worksBoxData";
 import WorksBox from "../UI/WorksBox";
 
-const DjfyWorks = () => {
+const DjfyWorksSection = () => {
   return (
     <div className="bg-[#07091F] text-white font-montserrat w-full flex justibe flex-col pb-12 pt-0">
       <div className="heading_container w-full flex-3 flex-col my-9 md:my-14 pb-8 md:pb-12 gap-3">
@@ -19,4 +19,4 @@ const DjfyWorks = () => {
   );
 };
 
-export default DjfyWorks;
+export default DjfyWorksSection;

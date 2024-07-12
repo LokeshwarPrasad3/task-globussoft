@@ -1,6 +1,6 @@
 import ClientTestimonials from "../Components/Layout/ClientTestimonials";
 import InfoLinks from "../Components/Layout/InfoLinks";
-import DjfyWorks from "../Components/Layout/DjfyWorks";
+import DjfyWorksSection from "../Components/Layout/DjfyWorksSection";
 import FAQSection from "../Components/Layout/FAQSection";
 import GallerySection from "../Components/Layout/GallerySection";
 import UltimateDJTool from "../Components/Layout/UltimateDJTool";
@@ -16,7 +16,7 @@ const HomePage = () => {
     <>
       <InfoLinks />
       <AboutUsSection />
-      <DjfyWorks />
+      <DjfyWorksSection />
       <UseCases />
       <UltimateDJTool />
       <WebApps />
