@@ -1,3 +1,5 @@
+import WebAppSwiperComponent from "../UI/WebAppSwiperComponent";
+
 const WebApps = () => {
   return (
     <div
@@ -18,20 +20,9 @@ const WebApps = () => {
           to Download or install any App.
         </p>
       </div>
-      <div className="animation_phones">
-        <img
-          className="w-[95vw] sm:w-[80vw] md:w-[70vw] lg:w-[50vw] h-auto"
-          src="/images/webapps/web-apps-look.png"
-          alt="appimage"
-        />
-      </div>
-      <div className="rectangle_animate flex-3 gap-3 ">
-        <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-        <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-        <div className="h-2 w-2 border-1 border-white bg-yellow-100 hover:scale-150 cursor-pointer rounded-full"></div>
-        <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-        <div className="h-2 w-2 border-1 border-white bg-gray-500 hover:scale-150 cursor-pointer rounded-full"></div>
-      </div>
+      {/* a swiper slider of apps */}
+      <WebAppSwiperComponent />
+
       <div className="webapps_button_container text-white flex-3 gap-8 sm:gap-10">
         <button className="custom_button">Sign Up as User</button>
         <button className="custom_button">Signup as DJ</button>
