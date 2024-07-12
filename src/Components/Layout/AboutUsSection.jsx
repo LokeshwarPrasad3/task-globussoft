@@ -1,11 +1,6 @@
-import { useEffect } from "react";
 import Navbar from "../UI/Navbar";
 
 const AboutUsSection = () => {
-  useEffect(() => {
-    document.body.style.backgroundColor = "black";
-  });
-
   return (
     <>
       <div
