@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-const Contacts = () => {
+const InfoLinks = () => {
   return (
     <div
-      className="contacts_container font-comfortaa font-medium text-[12px] leading-[13.38px] text-[#BCBCBC] md:h-[58px] p-3 md:p-0 bg-[#0E1135] 
+      className="infolinks_container font-comfortaa font-medium text-[12px] leading-[13.38px] text-[#BCBCBC] md:h-[58px] p-3 md:p-0 bg-[#0E1135] 
     flex items-center justify-center sm:justify-around flex-wrap gap-2 md:gap-5"
     >
       {/* 1st section */}
@@ -56,4 +56,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default InfoLinks;

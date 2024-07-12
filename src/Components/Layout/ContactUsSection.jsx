@@ -1,20 +1,19 @@
-import { Link } from "react-router-dom";
-
 const LinkRoutesArray = [
-  "About",
-  "Use Cases",
-  "Events",
-  "Web Apps",
-  "Usage Video",
-  "Gallery",
-  "Clients Testimonials",
-  "FAQ",
-  "Contact Us",
+  { name: "About  us", route: "#about-us" },
+  { name: "Use Cases", route: "#use-cases" },
+  { name: "Events", route: "#events" },
+  { name: "Web Apps", route: "#web-apps" },
+  { name: "Usage Video", route: "#videos" },
+  { name: "Gallery", route: "#gallery" },
+  { name: "Clients Testimonials", route: "#client-testimonials" },
+  { name: "FAQ", route: "#faq" },
+  { name: "Contact Us", route: "#contact-us" },
 ];
 
-const SiteMapSection = () => {
+const ContactUsSection = () => {
   return (
     <section
+      id="contact-us"
       style={{
         borderTop: "2px solid",
         borderBottom: "0px",
@@ -50,10 +49,14 @@ const SiteMapSection = () => {
         {/* second box of footer */}
         <div className="flex flex-col space-y-1 links_container">
           <h2 className="text-lg font-bold">Under the Hood</h2>
-          {LinkRoutesArray.map((route, index) => (
-            <Link className="font-normal text-sm leading-7" key={index} to="#">
-              {route}
-            </Link>
+          {LinkRoutesArray.map((routes, index) => (
+            <a
+              className="font-normal text-sm leading-7"
+              key={index}
+              href={routes.route}
+            >
+              {routes.name}
+            </a>
           ))}
         </div>
 
@@ -129,4 +132,4 @@ const SiteMapSection = () => {
   );
 };
 
-export default SiteMapSection;
+export default ContactUsSection;

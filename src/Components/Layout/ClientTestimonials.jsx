@@ -3,7 +3,10 @@ import { testimonialDataArray } from "../../data/TestimonialData";
 
 const ClientTestimonials = () => {
   return (
-    <div className="testimonial_container bg-[#09173C] font-montserrat flex-3 flex-col gap-12 py-16 ">
+    <div
+      id="client-testimonials"
+      className="testimonial_container bg-[#09173C] font-montserrat flex-3 flex-col gap-12 py-16 "
+    >
       <div className="heading_part_container flex-3 flex-col gap-4">
         <img
           src="/images/Testimonials/logo.png"

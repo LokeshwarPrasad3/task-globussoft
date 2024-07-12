@@ -8,7 +8,10 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="main_section min-h-[890px] w-full flex flex-col">
+      <div
+        id="about-us"
+        className="main_section min-h-[890px] w-full flex flex-col"
+      >
         <Navbar />
         <div className="search_section my-5 md:my-15 lg:my-20 flex justify-end items-center relative right-[10vw]">
           <img

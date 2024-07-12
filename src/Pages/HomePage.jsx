@@ -1,5 +1,5 @@
 import ClientTestimonials from "../Components/Layout/ClientTestimonials";
-import Contacts from "../Components/Layout/Contacts";
+import InfoLinks from "../Components/Layout/InfoLinks";
 import DjfyWorks from "../Components/Layout/DjfyWorks";
 import FAQSection from "../Components/Layout/FAQSection";
 import GallerySection from "../Components/Layout/GallerySection";
@@ -8,13 +8,13 @@ import UltimateDJTool from "../Components/Layout/UltimateDJTool";
 import UsageVideo from "../Components/Layout/UsageVideo";
 import UseCases from "../Components/Layout/UseCases";
 import WebApps from "../Components/Layout/WebApps";
-import SiteMapSection from "../Components/Layout/SiteMapSection";
+import ContactUsSection from "../Components/Layout/ContactUsSection";
 import FooterSection from "../Components/Layout/FooterSection";
 
 const HomePage = () => {
   return (
     <>
-      <Contacts />
+      <InfoLinks />
       <HeroSection />
       <DjfyWorks />
       <UseCases />
@@ -24,7 +24,7 @@ const HomePage = () => {
       <GallerySection />
       <ClientTestimonials />
       <FAQSection />
-      <SiteMapSection />
+      <ContactUsSection />
       <FooterSection />
     </>
   );

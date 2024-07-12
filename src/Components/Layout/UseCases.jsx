@@ -3,7 +3,10 @@ import UseCaseBox from "../UI/UseCaseBox";
 
 const UseCases = () => {
   return (
-    <div className="bg-[#0E1135] text-white font-montserrat w-full flex flex-col py-12 pt-5">
+    <div
+      id="use-cases"
+      className="bg-[#0E1135] text-white font-montserrat w-full flex flex-col py-12 pt-5"
+    >
       <div className="heading_container w-full flex-3 flex-col my-2 md:my-5 pb-5 md:pb-8 gap-2">
         <h1 className="heading text-[28px] md:text-[42px] leading-[51.01px]">
           USE <span className="text-[#EC3533]">CASES</span>

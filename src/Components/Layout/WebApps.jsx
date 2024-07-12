@@ -1,6 +1,9 @@
 const WebApps = () => {
   return (
-    <div className="webapp_container bg-[#07091F] font-montserrat flex-3 flex-col py-14 gap-12 pt-24 md:pt-28 lg:pt-40">
+    <div
+      id="web-apps"
+      className="webapp_container bg-[#07091F] font-montserrat flex-3 flex-col py-14 gap-12 pt-24 md:pt-28 lg:pt-40"
+    >
       <div className="heading_part_container flex-3 flex-col gap-4">
         <img
           src="/images/webapps/smartphone.png"

@@ -2,7 +2,10 @@ import VideoSection from "../UI/VideoSection";
 
 const UsageVideo = () => {
   return (
-    <div className="usagevideo_container font-montserrat flex-3 flex-col gap-12 py-20 ">
+    <div
+      id="videos"
+      className="usagevideo_container font-montserrat flex-3 flex-col gap-12 py-20 "
+    >
       <div className="heading_part_container flex-3 flex-col gap-4">
         <img
           src="/images/usagevideo/play-video.png"

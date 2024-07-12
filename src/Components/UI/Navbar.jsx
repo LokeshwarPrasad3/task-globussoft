@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   // creating array for multiple menu values
   const AllMenuLinksArray = [
-    "",
-    "About us",
-    "Use Cases",
-    "Events",
-    "Web App",
-    "FAQ",
-    "Contact us",
+    { name: "", route: "#" },
+    { name: "About us", route: "#about-us" },
+    { name: "Use Cases", route: "use-cases" },
+    { name: "Events", route: "#events" },
+    { name: "Web App", route: "#web-apps" },
+    { name: "FAQ", route: "#faq" },
+    { name: "Contact us", route: "#contact-us" },
   ];
   // for toggle menu open / close
   const [showMenu, setShowMenu] = useState(false);
@@ -27,15 +27,15 @@ const Navbar = () => {
             "linear-gradient(to right, black, #EE6127, #F9BC11, #EE6127, black) 1",
         }}
       >
-        <Link className="hidden md:flex" to="#">
+        <a className="hidden md:flex" href="#about-us">
           About us
-        </Link>
-        <Link className="hidden md:flex" to="#">
+        </a>
+        <a className="hidden md:flex" href="#use-cases">
           Use Cases
-        </Link>
-        <Link className="hidden md:flex" to="#">
+        </a>
+        <a className="hidden md:flex" href="#events">
           Events
-        </Link>
+        </a>
         <div className="vector_box relative top-[0.2rem] md:top-[1.18rem] flex-3">
           <img
             className="h-[100px] w-[175px] md:h-[132.28px] md:w-[232.5px]"
@@ -48,15 +48,15 @@ const Navbar = () => {
             alt="icon"
           />
         </div>
-        <Link className="hidden md:flex" to="#">
+        <a className="hidden md:flex" href="#web-apps">
           Web App
-        </Link>
-        <Link className="hidden md:flex" to="#">
+        </a>
+        <a className="hidden md:flex" href="#faq">
           FAQ
-        </Link>
-        <Link className="hidden md:flex" to="#">
+        </a>
+        <a className="hidden md:flex" href="#contact-us">
           Contact us
-        </Link>
+        </a>
 
         {/* responsive navbar design */}
         <div className={`md:hidden flex`}>
@@ -77,15 +77,15 @@ const Navbar = () => {
             <div
               className={`show_menu absolute h-screen top-0 ${showMenu ? "left-[0%]" : "left-[-100%]"} p-4 flex flex-col gap-4 bg-slate-900 w-[15rem] custom_transition`}
             >
-              {AllMenuLinksArray.map((menu_link, index) => (
+              {AllMenuLinksArray.map((routes, index) => (
                 <React.Fragment key={index}>
-                  <Link
+                  <a
                     onClick={() => setShowMenu(false)}
                     className="menu_link "
-                    to="#"
+                    href={routes.route}
                   >
-                    {menu_link}
-                  </Link>
+                    {routes.name}
+                  </a>
                 </React.Fragment>
               ))}
             </div>

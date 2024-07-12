@@ -5,6 +5,7 @@ export default {
   ],
   theme: {
     extend: {
+      scrollBehavior: ['smooth'],
       fontFamily: {
         'comfortaa': ['Comfortaa', 'sans-serif'],
         'montserrat': ["Montserrat"]
