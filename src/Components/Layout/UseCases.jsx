@@ -10,7 +10,7 @@ const UseCases = () => {
         </h1>
         <span className="w-[50px] bg-[#EC3533] h-[4px]"></span>
       </div>
-      <div className="use_cases_container flex-3 flex-wrap gap-y-16 sm:gap-y-12 md:gap-y-20 gap-x-10 w-full">
+      <div className="use_cases_container flex-3 flex-wrap gap-y-14 sm:gap-y-12 md:gap-y-20 gap-x-10 w-full">
         {useCasesDataArray.map((element, index) => (
           <UseCaseBox key={index} {...element} index={index} />
         ))}

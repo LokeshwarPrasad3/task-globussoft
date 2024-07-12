@@ -136,6 +136,21 @@
   position: relative;
 }
 
+/*👉 for usecase section */
+@media (max-width: 640px) {
+  .usecase_images {
+    width: 20rem;
+  }
+}
+@media (max-width: 350px) {
+  .usecase_images {
+    width: 18rem;
+  }
+  .usecase_para {
+    padding: 0 5px;
+  }
+}
+
 /*👉 for footer gradient colors */
 .bg_custom_gradient {
   background: linear-gradient(to bottom, #15213f, #121b35);

@@ -5,12 +5,12 @@ const UseCaseBox = ({ imageURL, title, description, index }) => {
     >
       <div className="image_container sm:w-fit">
         <img
-          className="w-[18rem] h-[12rem] sm:w-[20rem] sm:h-[12.9rem] lg:w-[448px] lg:h-[290px] rounded-[10px]"
+          className="usecase_images sm:h-[12.9rem] lg:w-[448px] lg:h-[290px] rounded-[10px]"
           src={imageURL}
           alt={`image-${index}`}
         />
       </div>
-      <div className="w-full px-4 sm:px-0 md:px-0 sm:w-1/2 lg:w-1/3 flex flex-col justify-center gap-2 md:gap-5">
+      <div className="usecase_para px-[12vw] sm:px-0 md:px-0 sm:w-1/2 lg:w-1/3 flex flex-col justify-center gap-2 md:gap-5">
         <h1
           className={`cntent_heading uppercase font-normal heading text-[20px] lg:text-[32px] leading-[39.01px] ${index % 2 == 0 ? "text-[#EC3533]" : "text-[#FDDF09]"}  `}
         >
